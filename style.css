@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.underline {
+  background-color: #ff9800;
+  width: 70px;
+  height: 3px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar .toggler-icon {
+  border-width: 5px;
+  color: #302d28;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.navbar {
+  border-top: 2px solid #f44336;
+  z-index: 5;
+  width: 100%;
+}
+
+.brand-logo {
+  color: #ff9800;
+}
+
+.brand-logo-icon {
+  color: #f44336;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: #f44336;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 15px;
+  color: #f44336;
+  transition: all 500ms ease-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+/* Hero */
+
+.carousel {
+  border-bottom: 3px solid #f44336;
+}
+
+.carousel-image {
+  height: 93vh;
+}
+
+.carousel-item {
+  top: 80px;
+}
+
+.carousel-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 45%;
+  min-width: 590px;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-top: 5rem;
+}
+
+.carousel-text div {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+
+.carousel-text h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #ff9800;
+}
+
+.carousel-text p {
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 0 1rem;
+}
+
+.carousel-text a {
+  color: #ffffff;
+  background-color: #f44336;
+  transition: all 1s ease;
+}
+
+.carousel-text a:hover {
+  background-color: #ff9800;
+}
+
+/* Services Section */
+.services {
+  margin-top: 3.7rem;
+}
+
+.services h2 {
+  color: #f44336;
+  letter-spacing: 1px;
+}
+
+.services .cards .card i {
+  color: #ff7314;
+}
+
+.services .cards .card p {
+  padding-top: 0;
+  font-size: 14px;
+}
+
+.services .cards {
+  gap: 30px;
+}
+
+.services .cards .card {
+  transition: all 0.6s ease;
+  max-width: 31%;
+}
+
+.services .cards .card:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1), -1px -1px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8%);
+}
+
+/* Intro Section */
+.intro {
+  margin-top: 3.7rem;
+}
+
+.intro h2 {
+  color: #f44336;
+  letter-spacing: 1px;
+}
+
+.intro-flex .intro-flex-left .lead {
+  font-style: italic;
+}
+
+.intro-flex .intro-flex-right i {
+  color: #ffb14f;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  background-color: #f44336;
+  padding: 5rem 0;
+}
+
+.portfolio h2 {
+  letter-spacing: 1px;
+}
+
+/* Pricing Section */
+.pricing h2 {
+  color: #f44336;
+}
+
+.pricing .pricing-cards .card {
+  border-top: 2px solid #f44336;
+  width: 350px;
+}
+
+.pricing .pricing-cards .card h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.pricing .pricing-cards .card p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.pricing .pricing-cards .card .card-list p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.pricing .pricing-cards .card .price {
+  color: #f44336;
+  font-size: 45px;
+}
+
+.pricing .pricing-cards .card button {
+  border: 1px solid #ff9800;
+  background: transparent;
+  color: #ff9800;
+}
+
+.pricing .pricing-cards .card button:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.pricing .pricing-cards .card .center-button {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+/* Service Section */
+.service-section {
+  background-color: #f44336;
+}
+
+.service-section .service-left {
+  letter-spacing: 1px;
+}
+
+.service-section .btn-lg {
+  border-width: 3px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all 1s ease;
+}
+
+.service-section .btn-lg:hover {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  color: #ffffff;
+}
+
+/* Team Section */
+.team .team-section h2 {
+  letter-spacing: 1px;
+  color: #f44336;
+}
+
+.team .cards .card {
+  width: 300px;
+  border: 2px solid #ff9800;
+}
+
+.team .cards .card h5 {
+  letter-spacing: 1px;
+}
+
+.team .cards .card i {
+  width: 40px;
+  height: 25px;
+  border: 1px solid #acabab;
+  color: #acabab;
+}
+
+.team .cards .card i:hover {
+  border: 1px solid #ff9800;
+
+  color: #ff9800;
+}
+
+.team .cards .card a {
+  text-decoration: none;
+}
+
+/* Contact Section */
+.contact .contact-section h2 {
+  color: #f44336;
+}
+
+.contact .contact-flex .contact-flex-left {
+  width: 40%;
+}
+
+.contact .contact-flex .contact-flex-left i {
+  width: 40px;
+  height: 40px;
+  background-color: #f44336;
+}
+
+.contact .contact-flex .contact-flex-left h5 {
+  color: #999999;
+  font-size: 20px;
+}
+
+.contact .contact-flex .contact-flex-left p {
+  font-size: 14px;
+}
+
+.contact .contact-flex .contact-flex-right {
+  width: 60%;
+}
+
+.contact .contact-flex .contact-flex-right input {
+  font-size: 15px;
+}
+
+.contact .contact-flex .contact-flex-right button {
+  background-color: #ff9800;
+  font-size: 16px;
+}
+
+.map {
+  animation: map 4s ease;
+  position: relative;
+}
+
+@keyframes map {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #302d28;
+  font-size: 14px;
+}
+
+footer p strong {
+  color: #999999;
+}
+
+@media (max-width: 992px) {
+  .team .cards .card {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .team .cards .card i {
+    width: 100px;
+  }
+
+  .contact .contact-flex .contact-flex-left {
+    width: 100%;
+  }
+
+  .contact .contact-flex .contact-flex-right {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .pricing .pricing-cards .card {
+    width: 100%;
+  }
+
+  .services .cards .card {
+    min-width: 100%;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+    width: 100vws;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 550px) {
+  .carousel-text {
+    width: 100%;
+  }
+
+} */
+
+@media (max-width: 580px) {
+  .navbar {
+    width: 100vw;
+  }
+
+  .team .cards .card .links {
+    flex-direction: column;
+  }
+
+  .team .cards .card .links i {
+    margin-bottom: 1rem;
+    width: 200px;
+    padding: 1rem 0;
+  }
+
+  .carousel-text {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .pricing .pricing-cards .card h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+}
